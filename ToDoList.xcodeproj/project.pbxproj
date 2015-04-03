@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7D9C01671ACE238F0040D757 /* MainTask.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D9C01621ACE238F0040D757 /* MainTask.m */; };
+		7D9C01681ACE238F0040D757 /* Subtask.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D9C01641ACE238F0040D757 /* Subtask.m */; };
+		7D9C01691ACE238F0040D757 /* ToDoList.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 7D9C01651ACE238F0040D757 /* ToDoList.xcdatamodeld */; };
 		7DA1A3CF1ACDF7BD005FF84D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DA1A3CE1ACDF7BD005FF84D /* main.m */; };
 		7DA1A3D21ACDF7BD005FF84D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DA1A3D11ACDF7BD005FF84D /* AppDelegate.m */; };
 		7DA1A3D51ACDF7BD005FF84D /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DA1A3D41ACDF7BD005FF84D /* ViewController.m */; };
@@ -27,6 +30,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		7D9C01611ACE238F0040D757 /* MainTask.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainTask.h; sourceTree = "<group>"; };
+		7D9C01621ACE238F0040D757 /* MainTask.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainTask.m; sourceTree = "<group>"; };
+		7D9C01631ACE238F0040D757 /* Subtask.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Subtask.h; sourceTree = "<group>"; };
+		7D9C01641ACE238F0040D757 /* Subtask.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Subtask.m; sourceTree = "<group>"; };
+		7D9C01661ACE238F0040D757 /* ToDoList.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ToDoList.xcdatamodel; sourceTree = "<group>"; };
 		7DA1A3C91ACDF7BD005FF84D /* ToDoList.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ToDoList.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7DA1A3CD1ACDF7BD005FF84D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7DA1A3CE1ACDF7BD005FF84D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -81,6 +89,11 @@
 		7DA1A3CB1ACDF7BD005FF84D /* ToDoList */ = {
 			isa = PBXGroup;
 			children = (
+				7D9C01611ACE238F0040D757 /* MainTask.h */,
+				7D9C01621ACE238F0040D757 /* MainTask.m */,
+				7D9C01631ACE238F0040D757 /* Subtask.h */,
+				7D9C01641ACE238F0040D757 /* Subtask.m */,
+				7D9C01651ACE238F0040D757 /* ToDoList.xcdatamodeld */,
 				7DA1A3D01ACDF7BD005FF84D /* AppDelegate.h */,
 				7DA1A3D11ACDF7BD005FF84D /* AppDelegate.m */,
 				7DA1A3D31ACDF7BD005FF84D /* ViewController.h */,
@@ -220,6 +233,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				7DA1A3D51ACDF7BD005FF84D /* ViewController.m in Sources */,
+				7D9C01691ACE238F0040D757 /* ToDoList.xcdatamodeld in Sources */,
+				7D9C01671ACE238F0040D757 /* MainTask.m in Sources */,
+				7D9C01681ACE238F0040D757 /* Subtask.m in Sources */,
 				7DA1A3D21ACDF7BD005FF84D /* AppDelegate.m in Sources */,
 				7DA1A3CF1ACDF7BD005FF84D /* main.m in Sources */,
 			);
@@ -412,6 +428,7 @@
 				7DA1A3EE1ACDF7BD005FF84D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		7DA1A3EF1ACDF7BD005FF84D /* Build configuration list for PBXNativeTarget "ToDoListTests" */ = {
 			isa = XCConfigurationList;
@@ -420,8 +437,22 @@
 				7DA1A3F11ACDF7BD005FF84D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		7D9C01651ACE238F0040D757 /* ToDoList.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				7D9C01661ACE238F0040D757 /* ToDoList.xcdatamodel */,
+			);
+			currentVersion = 7D9C01661ACE238F0040D757 /* ToDoList.xcdatamodel */;
+			path = ToDoList.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 7DA1A3C11ACDF7BD005FF84D /* Project object */;
 }
