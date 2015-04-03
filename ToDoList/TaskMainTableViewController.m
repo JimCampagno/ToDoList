@@ -12,6 +12,7 @@
 
 @interface TaskMainTableViewController ()
 @property (strong, nonatomic) DataManager *dataManager;
+- (IBAction)addMainTaskTapped:(id)sender;
 @end
 
 @implementation TaskMainTableViewController
@@ -97,4 +98,6 @@
 }
 */
 
+- (IBAction)addMainTaskTapped:(id)sender {
+}
 @end
