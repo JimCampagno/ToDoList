@@ -9,5 +9,5 @@
 #import <UIKit/UIKit.h>
 
 @interface TaskMainTableViewController : UITableViewController
-
+@property (strong, nonatomic) NSMutableArray *taskList;
 @end

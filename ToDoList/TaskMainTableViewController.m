@@ -7,16 +7,24 @@
 //
 
 #import "TaskMainTableViewController.h"
+#import "MainTask.h"
+#import "DataManager.h"
 
 @interface TaskMainTableViewController ()
-
+@property (strong, nonatomic) DataManager *dataManager;
 @end
 
 @implementation TaskMainTableViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    self.dataManager = [DataManager sharedDataManager];
+    [self.dataManager fetchData];
     
+    self.taskList = [[NSMutableArray alloc] init];
+    
+
+   
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;
     
@@ -31,21 +39,16 @@
 
 #pragma mark - Table view data source
 
-- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
-    return 1;
-}
-
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-#warning Incomplete method implementation.
     // Return the number of rows in the section.
-    return 0;
+    return [self.dataManager.mainTasks count];
 }
 
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"myCell" forIndexPath:indexPath];
-    
-    
+    MainTask *testTask = self.dataManager.mainTasks[indexPath.row];
+    cell.textLabel.text = testTask.name;
     return cell;
 }
 
